@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #195e83; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Navbar styles */
+#navbar {
+    overflow: hidden;
+    background-color: #195e83; 
+    border-bottom: solid 15px #111;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#container {
+    margin: 2% 5% 100px 5%;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #195e83;
+    text-align: center;
+}
+
+.card-content {
+    font-size: 1em;
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #195e83; /* Same color as header */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+   
+}
+
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+div {
+
+}
+
