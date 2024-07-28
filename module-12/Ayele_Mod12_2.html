@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Ayele_Mod12_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div style="width: 45%;">
+         <ol>
+    
+    	<h3>Top 10 Favorite Books</h3>
+             <div id="sort">
+               <button onclick="displayBooksAscending()">Top to Bottom</button>
+               <button onclick="displayBooksDescending()">Bottom to Top</button>
+            </div>
+                <pl id="bookList">
+                <!-- Book list will be dynamically inserted here -->
+                </pl>
+          </ol>
+                
+        </div>       
+      
+   
+        <script>
+        const books = [
+            "Think and Grow Rich",
+            "Rich Dad Poor Dad",
+            "The Man Who Saw Tomorrow",
+            "The Lost Ark of the Covenant",
+            "The Godfather",
+            "The Art of Deception",
+            "Endless Love",
+            "The Lost King",
+            "I Will Teach You to Be Rich",
+            "The Art of Deception"
+        ];
+
+        function displayBooksAscending() {
+            const sortedBooks = books.slice().sort();
+            displayBooks(sortedBooks);
+        }
+
+        function displayBooksDescending() {
+            const sortedBooks = books.slice().sort().reverse();
+            displayBooks(sortedBooks);
+        }
+
+        function displayBooks(bookArray) {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            bookArray.forEach(book => {
+                const li = document.createElement('li');
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+
+        // Initial display of books in ascending order
+        displayBooksAscending();
+    </script>
+        <div style="width: 90%; margin-top: 60%;">
+            <a href="../index.html">Back to Landing Page</a>
+        </div>
+
+  
+   </div>
+</body>
+</html>
